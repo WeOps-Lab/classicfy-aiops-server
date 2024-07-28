@@ -11,6 +11,7 @@ ADD support-files/supervisor/service.conf /etc/supervisor/conf.d/service.conf
 ADD requirements/requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt && rm -Rf requirements.txt
 
+ADD libs ./libs
 ADD core ./core
 ADD embedding ./embedding
 ADD runnable ./runnable
